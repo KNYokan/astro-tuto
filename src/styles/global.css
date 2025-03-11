@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 html {
     background-color: #d3d5fd;
     font-family: 'Karla';
