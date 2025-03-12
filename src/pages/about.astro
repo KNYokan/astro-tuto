@@ -18,17 +18,7 @@ const identity = {
   const fontWeight = "3";
   const textCase = "uppercase";
 ---
-<style define:vars={{skillColor, fontWeight, textCase}}>
-	h1 {
-	  color: purple;
-	  font-size: 4rem;
-	}
-	.skill {
-		color: var(--skillColor);
-		font-weight: var(--fontWeight);
-		text-transform: var(--textCase);
-	  }
-  </style>
+
 <BaseLayout pageTitle={pageTitle} pageDescription={pageDescription}>
 	<p>Voici quelques faits me concernant :</p>
 	<ul>
@@ -40,7 +30,7 @@ const identity = {
 	</ul>
 	<p>Voici mes compétences :</p>
 	<ul>
-	  {skills.map((skill) => <li class="skill">{skill}</li>)}
+	  {skills.map((skill) => <li class="text-blue-900 font-light uppercase">{skill}</li>)}
 	</ul>
 	{happy && <p>Je suis heureux d'apprendre Astro !</p>}
 	
